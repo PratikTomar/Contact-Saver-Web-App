@@ -46,7 +46,6 @@ label {
   margin-bottom: 12px;
 }
 
-
 button {
   cursor: pointer;
   appearance: none;
@@ -77,4 +76,9 @@ a {
 
 .form-alert {
   height: 24px;
+}
+
+.submit-btn, .contact-edit-btn {
+  height: 44px;
+  font-size: 24px;
 }
