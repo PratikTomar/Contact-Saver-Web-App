@@ -1,92 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacts Web App | Edit Contact</title>
-    <!-- font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="index.css" type="text/css" />
-    <script src="editContact.js" defer></script>
-  </head>
-  <body>
-    <div class="container">
-      <form class="single-contact-form">
-        <h1>Edit Contact</h1>
-        <div class="input-container">
-          <label>Contact ID</label>
-          <p class="contact-edit-id"></p>
-        </div>
-        <div class="input-container">
-          <label for="contactName">Contact Name*</label>
-          <input
-            type="text"
-            name="name"
-            class="contact-name"
-            placeholder="Name"
-            id="contactName"
-            required
-          />
-        </div>
-        <div class="input-container">
-          <label for="contactNumber1">Contact Primary Number*</label>
-          <input
-            type="number"
-            name="number1"
-            class="contact-number1"
-            placeholder="Contact Primary Number"
-            id="contactNumber1"
-            required
-          />
-        </div>
-        <div class="input-container">
-          <label for="contactNumber2">Contact Secondary Number</label>
-          <input
-            type="number"
-            name="number2"
-            class="contact-number2"
-            placeholder="Contact Secondary Number"
-            id="contactNumber2"
-          />
-        </div>
-        <div class="input-container">
-          <label for="contactEmail">Contact Email</label>
-          <input
-            type="email"
-            name="email"
-            class="contact-email"
-            placeholder="Contact Email"
-            id="contactEmail"
-          />
-        </div>
-        <div class="input-container">
-          <label for="contactCity">Contact City</label>
-          <input
-            type="text"
-            name="city"
-            class="contact-city"
-            placeholder="Contact City"
-            id="contactCity"
-          />
-        </div>
-        <div class="input-container">
-          <label for="contactOrg">Contact Organization</label>
-          <input
-            type="text"
-            name="org"
-            class="contact-org"
-            placeholder="Contact Org."
-            id="contactOrg"
-          />
-        </div>
-        <button type="submit" class="contact-edit-btn">Edit</button>
-        <div class="form-alert"></div>
-      </form>
-      <a href="index.html" class="back-link"> Back To Home </a>
-    </div>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacts Web App | Edit Contact</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css" type="text/css">
+  <script src="editContact.js" defer></script>
+</head>
+
+<body>
+  <main>
+  <nav class="navbar">
+    <img src="./assets/logo.png">
+    <h1 class="logo">ContactCloud</h1>
+  </nav>
+  <h1>ContactCloud | Save your contacts</h1>
+  <div class="container">
+    
+    <form class="single-contact-form">
+  
+      <h1>Edit Contact</h1>
+      <div class="input-container">
+        <label>Contact ID</label>
+        <p class="contact-edit-id"></p>
+      </div>
+      <div class="input-container">
+        <label for="contactName">Contact Name*</label>
+        <input type="text" name="name" class="contact-name" placeholder="Name" id="contactName" required>
+      </div>
+      <div class="input-container">
+        <label for="contactNumber1">Contact Primary Number*</label>
+        <input type="tel" name="number1" class="contact-number1" placeholder="Contact Primary Number"
+          id="contactNumber1" required>
+      </div>
+      <div class="input-container">
+        <label for="contactNumber2">Contact Secondary Number</label>
+        <input type="tel" name="number2" class="contact-number2" placeholder="Contact Secondary Number"
+          id="contactNumber2">
+      </div>
+      <div class="input-container">
+        <label for="contactEmail">Contact Email</label>
+        <input type="email" name="email" class="contact-email" placeholder="Contact Email" id="contactEmail">
+      </div>
+      <div class="input-container">
+        <label for="contactCity">Contact City</label>
+        <input type="text" name="city" class="contact-city" placeholder="Contact City" id="contactCity">
+      </div>
+      <div class="input-container">
+        <label for="contactOrg">Contact Organization</label>
+        <input type="text" name="org" class="contact-org" placeholder="Contact Org." id="contactOrg">
+      </div>
+      <button type="submit" class="contact-edit-btn">Edit</button>
+      <div class="form-alert"></div>
+    </form>
+    <a href="index.html" class="back-link">Back To Home</a>
+  </div>
+  </main>
+</body>
+
 </html>
